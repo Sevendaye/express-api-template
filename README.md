@@ -7,3 +7,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/4gvckqsolqbusftp?svg=true)](https://ci.appveyor.com/project/Sevendaye/express-api-template)
 
 ## How to run the app
+
+test
