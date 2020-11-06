@@ -4,11 +4,15 @@ import {
   insertIntoTables,
 } from '../src/utils/queryFunctions';
 
-before(async () => {
-  await createTables();
-  await insertIntoTables();
-});
+describe('hooks', () => {
+  it('Create dummy data', () => {
+    before(async () => {
+      await createTables();
+      await insertIntoTables();
+    });
 
-after(async () => {
-  await dropTables();
+    after(async () => {
+      await dropTables();
+    });
+  });
 });
