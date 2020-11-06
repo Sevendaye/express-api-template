@@ -21,7 +21,7 @@ after_script:
 services:
   - postgresql
 addons:
-  postgresql: "13"
+  postgresql: "10"
   apt:
     packages:
     - postgresql-12
