@@ -10,7 +10,11 @@ describe('hooks', () => {
       await createTables();
       await insertIntoTables();
     });
+  });
+});
 
+describe('hooks', () => {
+  it('Create dummy data', () => {
     after(async () => {
       await dropTables();
     });
