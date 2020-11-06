@@ -24,8 +24,8 @@ addons:
   postgresql: "13"
   apt:
     packages:
-    - postgresql-13
-    - postgresql-client-13
+    - postgresql-12
+    - postgresql-client-12
 before_install:
   - psql -c 'create database testdb;' -U postgres
   - sudo cp /etc/postgresql/{9.6,10,13}/main/pg_hba.conf
