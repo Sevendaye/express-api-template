@@ -28,5 +28,5 @@ addons:
     - postgresql-client-12
 before_install:
   - psql -c 'create database testdb;' -U postgres
-  - sudo cp /etc/postgresql/{9.6,10,13}/main/pg_hba.conf
+  - sudo cp /etc/postgresql/{9.6,10,12}/main/pg_hba.conf
   - sudo /etc/init.d/postgresql restart
