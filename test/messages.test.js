@@ -11,8 +11,8 @@ describe('Messages', () => {
         res.body.messages.forEach(m => {
           expect(m).to.have.property('name');
           expect(m).to.have.property('message');
-          done();
         });
+        done();
       });
   });
 });
