@@ -21,12 +21,12 @@ after_script:
 services:
   - postgresql
 addons:
-  postgresql: "12"
+  postgresql: "10"
   apt:
     packages:
-    - postgresql-12
-    - postgresql-client-12
+    - postgresql-10
+    - postgresql-client-10
 before_install:
   - psql -c 'create database testdb;' -U postgres
-  - sudo cp /etc/postgresql/12/main/pg_hba.conf
+  - sudo cp /etc/postgresql/{10}/main/pg_hba.conf
   - sudo /etc/init.d/postgresql restart
